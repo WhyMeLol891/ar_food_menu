@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "imageWidth": 1080,
+  "imageHeight": 1350,
+  "dishes": [
+    {"id":"dish-1","type":"burger","name":"Classic Burger","nx":0.25,"ny":0.25,"radius":0.11,"scale":0.28,"rotation":0,"z":0},
+    {"id":"dish-2","type":"pizza","name":"Garden Pizza","nx":0.75,"ny":0.25,"radius":0.11,"scale":0.26,"rotation":0,"z":0},
+    {"id":"dish-3","type":"pasta","name":"Creamy Pasta","nx":0.25,"ny":0.48,"radius":0.11,"scale":0.24,"rotation":0,"z":0},
+    {"id":"dish-4","type":"fried-chicken","name":"Fried Chicken","nx":0.75,"ny":0.48,"radius":0.11,"scale":0.25,"rotation":0,"z":0},
+    {"id":"dish-5","type":"salad","name":"Green Salad","nx":0.25,"ny":0.71,"radius":0.11,"scale":0.24,"rotation":0,"z":0},
+    {"id":"dish-6","type":"juice","name":"Fresh Juice","nx":0.75,"ny":0.71,"radius":0.11,"scale":0.24,"rotation":0,"z":0}
+  ]
+}
