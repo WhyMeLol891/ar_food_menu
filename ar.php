@@ -1,3 +1,8 @@
+<?php
+header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+header('Pragma: no-cache');
+$arScriptVersion = @filemtime(__DIR__ . '/assets/js/ar.js') ?: time();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,6 +27,6 @@
 </script>
 <script src="assets/js/foods.js?v=3"></script>
 <script src="assets/js/common.js?v=3"></script>
-<script src="assets/js/ar.js?v=11"></script>
+<script src="assets/js/ar.js?v=<?= $arScriptVersion ?>"></script>
 </body>
 </html>
