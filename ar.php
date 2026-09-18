@@ -22,6 +22,6 @@
 </script>
 <script src="assets/js/foods.js?v=3"></script>
 <script src="assets/js/common.js?v=3"></script>
-<script src="assets/js/ar.js?v=10"></script>
+<script src="assets/js/ar.js?v=11"></script>
 </body>
 </html>
