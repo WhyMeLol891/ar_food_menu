@@ -2,8 +2,9 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../config.php';
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-	$targetFile = __DIR__ . '/../assets/targets/menu.mind';
-	json_response(['installed' => is_file($targetFile) && filesize($targetFile) > 0]);
+	$targetFiles = [__DIR__ . '/../assets/targets/menu.mind', __DIR__ . '/../assets/targets/targets.mind'];
+	$targetFile = array_values(array_filter($targetFiles, static fn(string $path): bool => is_file($path) && filesize($path) > 0))[0] ?? null;
+	json_response(['installed' => $targetFile !== null, 'file' => $targetFile ? basename($targetFile) : null]);
 }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_FILES['target'])) { json_response(['error' => 'Upload a compiled .mind target'], 422); }
 $file = $_FILES['target']; $name = strtolower((string)$file['name']);
